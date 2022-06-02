@@ -1,0 +1,65 @@
+@media screen and (max-width: 574px) {
+
+    
+
+    .home{
+        #business {
+
+
+            .business-content {
+
+               
+                .title-box {
+                    
+                    margin: 0 0 270px;
+                    .text-box {
+
+                        margin: 0;
+
+                    }
+
+                    img {
+                       
+                      
+                        bottom: -270px;
+                    }
+                }
+                .activities {
+                
+                    &-item {
+                       
+                        img {
+                          
+                            margin-right: 30px;
+                        }
+        
+                       
+                    }
+        
+                   
+                }
+
+            }
+        }
+    }
+   
+}
+
+@media screen and (max-width: 374px) {
+
+    .header {
+        padding: 22px 0;
+        &-body {
+            .logo {
+
+                img {
+                    width: 190px;
+                    height: 30px;
+                }
+
+            }
+        }
+    }
+
+    
+}

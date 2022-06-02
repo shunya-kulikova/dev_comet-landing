@@ -1,0 +1,181 @@
+@media screen and (max-width: 1330px) {
+
+
+    .home {
+
+        #mainScreen {
+
+            .row {
+
+                h1,
+                .title_1 {
+                    font-size: 100px;
+                    transform: translate(0, -65%);
+                }
+            }
+
+
+        }
+
+        #value {
+
+
+            .value-row {
+
+                align-items: flex-start;
+                margin: 0 -10px;
+
+                &-item {
+                    padding: 0 10px;
+
+                    &:nth-child(1) {
+                        order: 1;
+                    }
+
+                    &:nth-child(2) {
+                        order: 0;
+                        width: 100%;
+                        margin-bottom: 40px;
+                    }
+
+                    &:nth-child(3) {
+                        order: 3;
+                    }
+
+                    &:nth-child(4) {
+                        order: 2;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+
+
+}
+
+@media screen and (max-width: 1199px) {
+
+
+
+
+    .home {
+
+        #mainScreen {
+
+            .row {
+
+                h1,
+                .title_1 {
+
+
+                    transform: translate(0, -90%);
+                }
+            }
+
+
+        }
+
+        #countries {
+
+
+            .countries-content {
+
+
+                .tab-content {
+                    .tab-pane {
+                        .country {
+                            align-items: flex-start;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        #value {
+
+
+            .value-row {
+
+                align-items: center;
+                margin: 0;
+
+                &-item {
+                    padding: 0;
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                }
+
+                .text-box {
+
+                    background: rgba(189, 165, 132, 0.21);
+                    border-radius: 24px;
+                    padding: 50px 0 30px 35px;
+                    width: 100%;
+                    max-width: 600px;
+                    min-width: 320px;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        #business {
+
+
+            .business-content {
+
+                flex-wrap: wrap;
+                padding: 0;
+
+                .title-box {
+                    padding: 140px 10px;
+
+                    .text-box {
+
+                        margin: 0;
+
+                       
+
+                       
+                    }
+
+                    img {
+                       
+                        max-width: 500px;
+                        min-width: 500px;                
+                        bottom: 0;
+                        z-index: 0;
+                    }
+                }
+
+                .activities {
+                  
+                    margin: 0;
+                    padding: 70px 10px 0;
+                  
+
+                    &-item {
+                       
+                       
+
+
+                        &::before {
+                           
+                            left: -10px;
+                        }
+                    }
+
+                    .strategy {
+
+                        margin: 0 0 70px;
+                    }
+                }
+            }
+        }
+    }
+
+}

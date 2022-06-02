@@ -1,0 +1,56 @@
+$primary: #D43401;
+$secondary: #E1DED7;
+$black: #171717;
+$gray: #757575;
+$white: #FFFFFF;
+
+$content: 'Gilroy-Regular';
+$headlines: 'Sen-Regular';
+
+
+
+::selection {
+    background-color: $secondary;
+}
+a::selection{
+	
+}
+
+
+
+@mixin scroll {
+    /* IE */
+    scrollbar-face-color: white;
+    scrollbar-shadow-color: white;
+    scrollbar-highlight-color: white;
+    /* FireFox */
+    scrollbar-color: white white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 10px;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: white;
+        background-clip: padding-box;
+        border: 0px solid white;
+
+        &:hover {
+            background-color: white;
+            cursor: pointer;
+
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: white;
+        cursor: pointer;
+    }
+
+    ::-webkit-scrollbar-button {
+        background-color: transparent;
+    }
+}

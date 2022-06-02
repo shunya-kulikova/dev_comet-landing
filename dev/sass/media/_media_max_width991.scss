@@ -1,0 +1,253 @@
+@media screen and (max-width: 991px) {
+
+    body {
+
+        &.lock {
+            overflow: hidden;
+        }
+    }
+
+
+    .wrapper {
+        padding-top: 80px;
+    }
+
+    .header {
+        max-height: 80px;
+        padding: 17px 0;
+
+        &-body {
+
+
+            .header-burger {
+                display: block;
+
+            }
+
+            .header-menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: auto;
+                background-color: #B5956C;
+                display: none;
+
+                ul {
+                    overflow: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 0;
+                    padding: 120px 0 60px;
+                    position: relative;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 1px;
+                        background-color: $white;
+                        top: 80px;
+                        left: 0;
+                    }
+
+                    li {
+                        &::before {
+                            display: none;
+                        }
+
+                        .header-link {
+                            color: $white;
+                            font-size: 16px;
+                            color: $white;
+                            font-size: 16px;
+                            font-weight: 600;
+                            padding: 0;
+                            margin: 13px 0;
+                            height: auto;
+
+                            &:hover {
+                                background-color: transparent;
+                                color: $black;
+                                border-bottom: none;
+                            }
+
+                            &.active {
+                                background-color: transparent;
+                                color: $black;
+                                border-bottom: none;
+                            }
+                        }
+                    }
+
+                }
+
+                &.active {
+                    display: block;
+                }
+            }
+        }
+
+
+
+
+    }
+
+    .footer {
+
+        &-row {
+            flex-direction: column;
+            text-align: center;
+
+            .logo {
+                margin-bottom: 15px;
+            }
+
+        }
+    }
+
+    .home {
+
+        #about {
+
+
+            .about-content {
+
+
+                .text-box {
+
+                    min-width: 500px;
+                    padding: 120px 25px 120px 25px;
+                }
+
+            }
+        }
+
+        #contactForm {
+
+            .contact-content {
+
+                .template-form {
+
+                    .input-row {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+
+                    input {
+                        max-width: 100%;
+                        margin-right: 0;
+                    }
+
+                    .wpcf7-not-valid {
+
+                        max-width: 100%;
+                        margin-right: 0;
+
+                    }
+
+                }
+            }
+
+        }
+        #mainScreen {
+            
+            .row {
+                
+                overflow: hidden;
+                img {
+                    width: 105vw;
+                    margin-left: -20px;
+                }
+        
+                h1,
+                .title_1 {
+                    max-width: 400px;
+                    transform: translate(0, -75%);
+                }
+            }
+        
+        
+           
+        
+        
+        
+        
+        }
+
+        #countries {
+        
+            .countries-content {
+        
+                .tab-content {
+                    .tab-pane {
+                        .country {
+                            
+                            flex-wrap: wrap;
+                            margin-bottom: 48px;
+                            
+                            a {
+                                margin-bottom: 30px;
+                                width: 100%;
+                                .image-box {
+                                    img {
+                                        width: 100%;
+                                        min-width: 100%;
+                                        max-width: 100%;
+                                        transition: .2s;
+                                    }
+            
+                                    margin-right: 0;
+                                    position: relative;
+                                    
+                                    &::after {
+                                        content: "";
+                                        position: absolute;
+                                        background: url(assets/img/zoom-icon.svg) no-repeat;
+                                        background-size: contain;
+                                        bottom: 0;
+                                        right: 0;
+                                        width: 50px;
+                                        height: 50px;
+                                    }
+                                }
+                                &:hover {
+                                    .image-box{
+                                        
+                                        img {
+                                            filter: brightness(60%);
+                                            -webkit-filter: brightness(60%);
+                                        }
+                                    }
+                                }
+                            }
+                            
+        
+                            .text-box {
+                                p {
+                                    margin-bottom: 0;
+                                }
+                            }
+        
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                background-color: $gray;
+                                width: 100%;
+                                height: 1px;
+                                bottom: -24px;
+                                left: 0;
+                            }
+        
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+        
+    }
+
+}

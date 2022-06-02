@@ -1,0 +1,55 @@
+#fancyItem1,
+#fancyItem2,
+#fancyItem3,
+#fancyItem4 {
+    display: none;
+    width: 100%;
+    max-width: 1130px;
+    background-color: transparent;
+
+    .image-box {
+
+        img {
+            width: 100%;
+            max-width: 1080px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .text-box {
+        color: $white;
+        background-color: $black;
+        padding: 20px;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.fancybox-navigation {
+    .fancybox-button {
+        top: 40%;
+
+        &::before {
+            background-color: $primary;
+        }
+
+        &--arrow_right {
+            
+        
+            svg {
+                top: 8%;
+                right: -33%;
+            }
+        }
+
+        &--arrow_left {
+            
+            svg {
+                top: 8%;
+                right: -22%;
+            }
+        }
+    }
+}
